@@ -1,3 +1,17 @@
+function getTimeForEducation(priority,knowl,config){
+  
+  if(knowl===true){
+    return 800/config[priority];
+    
+    }else{
+      
+    return (800+500)/config[priority];
+    }
+}
+
+
+
+
 /**
  * @param preferences - target student focus
  * @param knowsProgramming - if student can do programming and know basics
