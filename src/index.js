@@ -1,18 +1,3 @@
-function getTimeForEducation(preferences,knowsProgramming,config){
-  
-  if(knowsProgramming===true){
-    return 800/config[preferences];
-    
-    }else{
-      
-    return (800+500)/config[preferences];
-    }
-  
-  
-}
-
-
-
 /**
  * @param preferences - target student focus
  * @param knowsProgramming - if student can do programming and know basics
@@ -24,6 +9,10 @@ module.exports = function getTimeForEducation(
     knowsProgramming = true,
     config = {family: 4}
     ) {
-      return 0;
+      if(knowsProgramming===true){
+    return 800/config[focus];
+    }else{
+    return (800+500)/config[focus];
+    }
   };
   
