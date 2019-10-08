@@ -1,11 +1,11 @@
-function getTimeForEducation(priority,knowl,config){
+function getTimeForEducation(preferences,knowsProgramming,config){
   
-  if(knowl===true){
-    return 800/config[priority];
+  if(knowsProgramming===true){
+    return 800/config[preferences];
     
     }else{
       
-    return (800+500)/config[priority];
+    return (800+500)/config[preferences];
     }
   
   
